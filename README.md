@@ -5,6 +5,7 @@
 3. Rapha Sammah Sinamo ( 233303030357 )
 4. Riyan Anderson Johannes Nainggolan ( 233303030342 )
 5. Yoseph Septianus Manik ( 233303030352 )
+6. AYGIFT GUSTIAN DAMANIK ( 233303030371 )
 
 
 ## Tema:
