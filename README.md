@@ -6,6 +6,6 @@
 4. Marcelino Christian Aritonang ( 233303030330 )
 5. Yoseph Septianus Manik ( 233303030352 )
 
-
+update test bg samm
 ## Tema:
 Aplikasi Booking Lapangan menggunakan framework Next.js (Frontend) dan Ruby on Rails (Backend)
