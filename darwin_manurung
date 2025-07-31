@@ -1,0 +1,31 @@
+import sqlite3
+
+# Koneksi ke database
+conn = sqlite3.connect('uas_database.db')
+cursor = conn.cursor()
+
+# Buat tabel
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS mahasiswa (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nama TEXT NOT NULL,
+    npm TEXT NOT NULL UNIQUE
+)
+''')
+
+# Tambah data
+def tambah_mahasiswa(nama, npm):
+    cursor.execute("INSERT INTO mahasiswa (nama, npm) VALUES (?, ?)", (nama, npm))
+    conn.commit()
+
+# Tampilkan data
+def tampilkan_mahasiswa():
+    cursor.execute("SELECT * FROM mahasiswa")
+    for row in cursor.fetchall():
+        print(row)
+
+# Contoh penggunaan
+tambah_mahasiswa("Darwin Manurung", "211201001")
+tampilkan_mahasiswa()
+
+conn.close()
